@@ -6,14 +6,12 @@ gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 
 #heroku needs:
-group :production do 
-  gem 'rails_12factor' #required by heroku
-  gem 'pg'
-end
 
-group :development do
-  gem 'sqlite3'
-end
+gem 'rails_12factor', group :production #required by heroku
+gem 'pg'
+
+gem 'sqlite3' , group :development
+
 
 gem 'devise' #user session
 # Use SCSS for stylesheets
