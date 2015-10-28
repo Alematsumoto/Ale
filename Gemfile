@@ -7,10 +7,10 @@ gem 'rails', '4.2.4'
 
 #heroku needs:
 
-gem 'rails_12factor', group :production #required by heroku
-gem 'pg'
+gem 'rails_12factor', group: :production #required by heroku
+gem 'pg', group: :production
 
-gem 'sqlite3' , group :development
+gem 'sqlite3' , group: :development
 
 
 gem 'devise' #user session
